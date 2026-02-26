@@ -1,0 +1,8 @@
+* {
+charcoal-grey:   #3a3a3a;
+steel-grey:      #575757;
+mid-grey:        #7b7b7b;
+silver-grey:     #949494;
+fog-grey:        #b8b8b8;
+semi-trans-steel-grey: #575757e6; 
+}

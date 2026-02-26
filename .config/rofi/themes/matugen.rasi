@@ -1,0 +1,115 @@
+configuration {
+    modi:                   "drun";
+    show-icons:             true;
+    icon-theme:             "Papirus";
+    font:                   "JetBrainsMono Nerd Font 12";
+    drun-display-format:    "{icon}  {name}";
+}
+
+@theme "floating"
+/* ---- Load wallust colors ---- */
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+
+/* ---- Global Properties ---- */
+* {
+    border-radius:  16px;
+    border:         2px;
+    border-color:   @white-transparent30;
+}
+
+window {
+    width:            50%;
+    height:           65%;
+    location:         center;
+    anchor:           center;
+    transparency:     "real";
+    background-color: transparent;
+}
+
+mainbox {
+    children:                   [ inputbar, listview ];
+    spacing:                    10px;
+    padding:                    20px;
+    border:                     2px;
+    border-color:               @on-primary;
+    background-image:           url("~/Pictures/hyprland/hyprlock/rofi-bg.jpg", height);
+    background-position:        center;
+}
+
+inputbar {
+    enabled:                    true;
+    orientation:                horizontal;
+    padding:                    0px;
+    spacing:                    0px;
+    anchor:                     center;
+    border-radius:              8px;
+    children:                   [ "textbox-prompt-colon", "entry" ];
+    border:                     1px;
+    border-color:               @on-primary;
+    background-color:           @primary;
+    text-color:                 black;
+}
+
+textbox-prompt-colon {
+    enabled:                    true;
+    text-color:                 @on-primary;
+    background-color:           transparent;
+    border-color:               transparent;
+    expand:                     false;
+    padding:                    8px 0px 8px 12px;
+    str:                        " ";
+}
+
+entry {
+    enabled:                    true;
+    text-color:                 @on-primary;
+    background-color:           transparent;
+    border-color:               transparent;
+    padding:                    8px 0px 8px 3px;
+    cursor:                     text;
+    placeholder:                "Search...";
+}
+
+listview {
+    columns:                    1;
+    lines:                      8;
+    border:                     0px;
+    border-radius:              0px;
+    spacing:                    -1px;
+    scrollbar:                  false;
+    background-color:           transparent;
+}
+
+element {
+    orientation:                horizontal;
+    padding:                    10px 8px 10px 8px;
+    border-radius:              8px;
+    background-color:           @primary-dim-transparent;
+    border:                     1px 1px 1px1px;
+    border-color:               @on-primary;
+}
+
+element-icon {
+  size:                         32px;
+  background-color:             transparent;
+  border:                       0px;
+  padding:                      0px 0px 0px 8px;
+  border-radius:                0px;
+}
+
+element-text {
+  background-color:             transparent;
+  border:                       0px;
+  text-color:                   @primary;
+  padding:                      5px 0px 0px 0px;
+  border-radius:                0px;
+}
+element selected {
+    background-color:           @primary;
+    border-radius:              8px;
+    border:                     1px 1px 1px 1px;
+}
+
+element-text selected{
+  text-color:                   @on-primary;
+}
