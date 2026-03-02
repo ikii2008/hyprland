@@ -1,0 +1,343 @@
+@import "wallust/matugen.css";
+
+@define-color noti-bg rgba(0, 0, 0, 0.8);
+@define-color charcoal_grey #3a3a3a;
+@define-color steel_grey #575757;
+@define-color mid_grey #7b7b7b;
+@define-color silver_grey #949494;
+@define-color fog_grey #b8b8b8;
+@define-color charcoal_grey_transparent rgba(58, 58, 58, 0.9);
+@define-color steel_grey_transparent rgba(87, 87, 87, 0.9);
+@define-color mid_grey_transparent rgba(123, 123, 123, 0.9);
+@define-color silver_grey_transparent rgba(148, 148, 148, 0.9);
+@define-color fog_grey_transparent rgba(184, 184, 184, 0.9);
+
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @charcoal_grey;
+    border-radius: 10px
+}
+
+.notification-row {
+    outline: none;
+}
+
+.notification {
+    background: @charcoal_grey_transparent;
+    padding: 3px 10px 3px 6px;
+    border-radius: 10px;
+    border: 2px solid @noti-bg;
+}
+
+.notification-default-action {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.notification-group {
+    background-color: @charcoal_grey_transparent;
+    border-radius: 10px;
+    color: @fog_grey;
+}
+
+.close-button {
+    background: @charcoal_grey;
+    color: @noti-bg;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.close-button:hover {
+    box-shadow: none;
+    background: @steel_grey;
+    transition: all .15s ease-in-out;
+    border: none
+}
+
+
+.notification-action {
+    border: 1px solid @charcoal_grey;
+    border-top: none;
+    border-radius: 10px;
+}
+
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
+}
+
+
+.notification-default-action {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px
+}
+
+.notification-action {
+    border-bottom-left-radius: 10px;
+    background: @steel_grey;
+    color: @mid_grey;
+}
+
+.inline-reply {
+    margin-top: 8px
+}
+
+.inline-reply-entry {
+    background: @noti-bg;
+    color: @mid_grey;
+    caret-color: @mid_grey;
+    border: 1px solid @noti-bg;
+    border-radius: 10px
+}
+
+.inline-reply-button {
+	font-size: 0.5rem;
+    margin-left: 4px;
+    background: @noti-bg;
+    border: 1px solid @noti-bg;
+    border-radius: 10px;
+    color: @mid_grey
+}
+
+.inline-reply-button:disabled {
+    background: initial;
+    color: @mid_grey;
+    border: 1px solid transparent
+}
+
+.inline-reply-button:hover {
+    background: @mid_grey
+}
+
+.body-image {
+    margin-top: 6px;
+    color: @fog_grey;
+    border-radius: 10px
+}
+
+.summary {
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    color: @fog_grey;
+    text-shadow: none
+}
+
+.time {
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    color: @fog_grey;
+    text-shadow: none;
+    margin-right: 18px
+}
+
+.body {
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    color: @mid_grey;
+    text-shadow: none
+}
+
+.control-center {
+    background: @noti-bg;
+    border: 1px solid @charcoal_grey_transparent;
+	color: @fog_grey;
+    border-radius: 10px;
+}
+
+.control-center-list {
+    background: transparent
+}
+
+.control-center-list-placeholder {
+    opacity: 0.5
+}
+
+.floating-notifications {
+    background: transparent;
+}
+
+.blank-window {
+    background: alpha(black, 0.1)
+}
+
+.widget-title {
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
+    padding: 3px 6px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.widget-title>button {
+    font-size: 0.75rem;
+    color: @fog_grey;
+    border-radius: 10px;
+	background: @steel_grey;
+	border: 0.5px solid @noti-bg;
+}
+
+/* clear button */
+.widget-title>button:hover {
+    background: @fog_grey;
+    color: @charcoal_grey;
+}
+
+.widget-dnd {
+    background: @charcoal_grey_transparent;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    color: @charcoal_grey;
+}
+
+.widget-dnd>switch {
+    border-radius: 10px;
+    border: 1px solid @fog_grey;
+    background: @steel_grey;
+}
+
+.widget-dnd>switch:checked {
+    background: @mid_grey;
+    border: 1px solid @fog_grey;
+}
+
+.widget-dnd>switch slider {
+    background: @charcoal_grey;
+    border-radius: 10px
+}
+
+.widget-dnd>switch:checked slider {
+    background: @fog_grey;
+    border-radius: 10px
+}
+
+.widget-label {
+    margin: 5px;
+}
+
+.widget-label>label {
+    font-size: 1rem;
+    color: @fog_grey;
+}
+
+.widget-mpris {
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.widget-mpris > box > button {
+    border-radius: 10px;
+}
+
+.widget-mpris-player {
+    padding: 3px 6px;
+    margin: 5px;
+}
+
+.widget-mpris-title {
+    font-weight: 100;
+    font-size: 1rem
+}
+
+.widget-mpris-subtitle {
+    font-size: 0.75rem
+}
+
+.widget-buttons-grid {
+    font-size: large;
+	color: @fog_grey;
+    padding: 5px 0px 5px 8px;
+    margin: 5px;
+    border-radius: 10px;
+    background: @charcoal_grey_transparent;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    margin: 2px;
+    background: @charcoal_grey;
+    border-radius: 10px;
+    color: @fog_grey
+}
+
+/* individual buttons */
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @steel_grey;
+    color: @charcoal_grey
+}
+
+.widget-menubar>box>.menu-button-bar>button {
+    border: none;
+    background: transparent
+}
+
+.topbar-buttons>button {
+    border: none;
+    background: transparent
+}
+
+.widget-volume {
+    background: transparent;
+    padding: 5px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: @fog_grey
+}
+
+.widget-volume>box>button {
+    background: @fog_grey;
+    border: none
+}
+
+.per-app-volume {
+    background-color: @noti-bg;
+    padding: 4px 8px 8px;
+    margin: 0 8px 8px;
+    border-radius: 10px;
+	color: @fog_grey
+}
+
+.widget-backlight {
+    background: transparent;
+    padding: 5px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: @fog_grey
+}
+
+.widget-volume scale highlight {
+    background: @mid_grey;
+    border-radius: 10px;
+}
+
+.widget-backlight scale highlight {
+    background: @mid_grey;
+    border-radius: 10px;
+}

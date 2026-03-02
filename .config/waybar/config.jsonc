@@ -1,0 +1,38 @@
+{
+  "include": [
+	  "$HOME/.config/waybar/modules",
+	  "$HOME/.config/waybar/modules_custom",
+	  "$HOME/.config/waybar/modules_group",
+	  ],
+	"layer": "top",
+	"mode": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "top",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 3,
+	"margin-left": 8,
+	"margin-right": 8,
+	
+	"modules-left": [
+    "group/left",
+    ],
+	
+	"modules-center": [
+		"group/center",
+		],
+	
+	"modules-right": [
+    "group/swaync",
+		"group/mobo",
+    "group/group-menu",
+    "group/systray",
+		"group/menu",
+		],
+}
+	
+	
+	
+

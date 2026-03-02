@@ -1,0 +1,82 @@
+{
+
+"group/mobo": {
+  "orientation": "inherit",
+  "drawer": {
+      "transition-duration": 300,
+      "children-class": "temperature",
+      "transition-left-to-right": false,
+      "click-to-reveal": true
+    },
+  "modules": [
+    "temperature",
+    "cpu",
+    "custom/separator#dot-line",
+    "memory",
+    "custom/separator#dot-line",
+    "disk",    
+    "custom/separator#dot-line"
+    ]
+},
+
+"group/menu": {
+  "orientation": "horizontal",
+  "modules": [
+    "battery",
+    "custom/separator#dot-line",
+    "custom/power"
+    ]
+},
+
+"group/systray": {
+  "orientation": "horizontal",
+  "modules": [
+    "network",
+    "custom/separator#dot-line",
+    "pulseaudio",
+    "custom/separator#dot-line",
+    "bluetooth"
+    ]
+},
+
+"group/center": {
+  "orientation": "horizontal",
+  "modules": [
+    "clock",
+    ]
+},
+
+"group/group-menu": {
+  "orientation": "inherit",
+  "drawer": {
+      "transition-duration": 300,
+      "children-class": "custom/menu",
+      "transition-left-to-right": false,
+      "click-to-reveal": true
+    },
+  "modules": [
+    "custom/menu",
+    "backlight",
+    "custom/separator#dot-line",
+    "power-profiles-daemon",
+    "custom/separator#dot-line",
+    "idle_inhibitor",
+    "custom/separator#dot-line"
+    ]
+},
+
+"group/swaync": {
+  "orientation": "horizontal",
+  "modules": [
+    "custom/swaync"
+    ]
+},
+
+"group/left": {
+  "orientation": "horizontal",
+  "modules": [
+    "hyprland/workspaces"
+    ]
+}
+
+}

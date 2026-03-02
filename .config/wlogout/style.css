@@ -1,0 +1,89 @@
+@import "colors.css";
+@import "mocha.css";
+
+window {
+    background-color: rgba(10, 10, 18, 0.94);
+}
+
+button {
+    background-color: @primary;
+    color: #000000;
+    border: 2px solid @on_primary;
+    border-radius: 38px;
+    margin: 20px;
+    padding: 30px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    background-color: @primary-dim;
+    color: #000000;
+}
+
+button:focus {
+    background-color: @on_primary;
+    color: #000000;
+    border: 2px solid @on_primary;
+    border-radius: 38px;
+}
+
+button label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+button image {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+button label {
+    margin-top: 60px;
+}
+
+#lock {
+    background-image: url("/home/iki/.config/wlogout/icons/lock.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+#logout {
+    background-image: url("/home/iki/.config/wlogout/icons/logout.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+#suspend {
+    background-image: url("/home/iki/.config/wlogout/icons/sleep.png");
+	background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+#shutdown {
+    background-image: url("/home/iki/.config/wlogout/icons/power.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+#reboot {
+    background-image: url("/home/iki/.config/wlogout/icons/restart.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+#hibernate {
+    background-image: url("/home/iki/.config/wlogout/icons/hibernate.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+}
+
+
+
