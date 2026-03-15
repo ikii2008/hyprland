@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 
-rm ~/.config/hypr/tmp/*
+TMP_DIR="$HOME/.config/hypr/tmp"
+SAVE_DIR="$HOME/Pictures/Screenshots"
 
-hyprshot -z -m region -s -o ~/.config/hypr/tmp 2>/dev/null
+rm -f "$TMP_DIR"/*
 
-sleep 0.5
-
-FILE=$(ls -t ~/.config/hypr/tmp/* | head -1)
-
-sleep 0.5
-
-cp "$FILE" "/home/iki/Pictures/Screenshots/$(basename "$FILE")"
+# Jalankan hyprshot
+hyprshot -z -m region -s -o "$TMP_DIR" 2>/dev/null
 
 sleep 0.5
 
-notify-send -i "/home/iki/Pictures/Screenshots/$(basename "$FILE")" "copied"
+# Ambil file terbaru kalau ada
+FILE=$(ls -t "$TMP_DIR"/* 2>/dev/null | head -1)
+
+# Cek apakah file benar-benar ada
+if [[ -f "$FILE" ]]; then
+    cp "$FILE" "$SAVE_DIR/$(basename "$FILE")"
+    
+    notify-send -i "$SAVE_DIR/$(basename "$FILE")" "Screenshot copied"
+fi

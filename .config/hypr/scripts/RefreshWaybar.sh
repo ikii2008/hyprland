@@ -3,7 +3,7 @@
 pkill waybar
 waybar &
 
-~/.config/hypr/UserScripts/RainbowBorders.sh &
+~/.config/hypr/scripts/RainbowBorders.sh &
 
 sleep 0.5
 swaync-client -R -rs
