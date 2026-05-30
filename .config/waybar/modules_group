@@ -56,6 +56,8 @@
     },
   "modules": [
     "custom/menu",
+    //"custom/autochwp",
+    //"custom/separator#dot-line",
     "backlight",
     "custom/separator#dot-line",
     "power-profiles-daemon",

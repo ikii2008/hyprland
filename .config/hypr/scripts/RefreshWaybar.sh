@@ -1,5 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 pkill waybar
-waybar
-exec ~/.config/hypr/UserScripts/RainbowBorders.sh
+waybar &
+
+~/.config/hypr/scripts/RainbowBorders.sh &
+
+sleep 0.5
+swaync-client -R -rs

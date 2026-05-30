@@ -1,5 +1,13 @@
 {
 
+"custom/autochwp": {
+  "format" : " 󰸉 ",
+  "on-click" : "bash /home/iki/.config/hypr/scripts/auto-change-wallpaper",
+  "on-click-right" : "notify-send 'Auto Change Wallpaper Deactive' && pkill -f /home/ik.i/.config/hypr/scripts/auto-change-wallpaper && waybar &",
+  "tooltip" : true,
+  "tooltip-format" : "Auto Change Wallpaper\nLeft Click: Activated\nRight Click: Deactivated",
+},
+  
 "custom/power": {
 	"format": " ⏻ ",
 	"on-click": "wlogout",

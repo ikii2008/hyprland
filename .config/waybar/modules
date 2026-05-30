@@ -99,7 +99,7 @@
     },
   "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
   "on-click-right": "pavucontrol -t 3",
-  "on-click-midle": "helvum",
+  "on-click-middle": "helvum",
   "tooltip": true,
   "tooltip-format": "{icon} {desc} | {volume}%",
 },

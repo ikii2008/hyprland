@@ -45,41 +45,41 @@ button label {
 }
 
 #lock {
-    background-image: url("/home/ikii/.config/wlogout/icons/lock.png");
+    background-image: url("/home/iki/.config/wlogout/icons/lock.png");
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 #logout {
-    background-image: url("/home/ikii/.config/wlogout/icons/logout.png");
+    background-image: url("/home/iki/.config/wlogout/icons/logout.png");
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 #suspend {
-    background-image: url("/home/ikii/.config/wlogout/icons/sleep.png");
+    background-image: url("/home/iki/.config/wlogout/icons/sleep.png");
 	background-size: 30%;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 #shutdown {
-    background-image: url("/home/ikii/.config/wlogout/icons/power.png");
+    background-image: url("/home/iki/.config/wlogout/icons/power.png");
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 #reboot {
-    background-image: url("/home/ikii/.config/wlogout/icons/restart.png");
+    background-image: url("/home/iki/.config/wlogout/icons/restart.png");
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center 35%;
 }
 
 #hibernate {
-    background-image: url("/home/ikii/.config/wlogout/icons/hibernate.png");
+    background-image: url("/home/iki/.config/wlogout/icons/hibernate.png");
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: center 35%;

@@ -48,6 +48,8 @@ dark_hex=$(printf "#%02X%02X%02X" "$dark_r" "$dark_g" "$dark_b")
 
 echo "@define-color primary-dim $dark_hex;" >> $css_file
 echo "@define-color primary-dim $dark_hex;" >> $wlogout_css
+echo "@define-color primary-dim $dark_hex;" >> ~/.config/swaync/wallust/matugen.css
+echo "@define-color primary-dim-transparent ${dark_hex}e6;" >> ~/.config/swaync/wallust/matugen.css
 sed -i "/^}/i\ primary-dim-transparent: ${dark_hex}e6;" "$rofi"
 
 
@@ -58,5 +60,3 @@ $mid_grey = rgba(7b7b7bff)
 $silver_grey = rgba(949494ff)
 $fog_grey  = rgba(b8b8b8ff)
 ''' >> ~/.config/hypr/colors.conf
-pkill waybar
-waybar &

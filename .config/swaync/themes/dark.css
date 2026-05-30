@@ -1,8 +1,16 @@
 @import "wallust/matugen.css";
 
-
 @define-color noti-bg rgba(0, 0, 0, 0.8);
-
+@define-color charcoal_grey #3a3a3a;
+@define-color steel_grey #575757;
+@define-color mid_grey #7b7b7b;
+@define-color silver_grey #949494;
+@define-color fog_grey #b8b8b8;
+@define-color charcoal_grey_transparent rgba(58, 58, 58, 0.9);
+@define-color steel_grey_transparent rgba(87, 87, 87, 0.9);
+@define-color mid_grey_transparent rgba(123, 123, 123, 0.9);
+@define-color silver_grey_transparent rgba(148, 148, 148, 0.9);
+@define-color fog_grey_transparent rgba(184, 184, 184, 0.9);
 
 * {
     font-family: "JetBrains Mono Nerd Font";
@@ -13,7 +21,7 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
-    background: @primary-dim;
+    background: @charcoal_grey;
     border-radius: 10px
 }
 
@@ -22,7 +30,7 @@
 }
 
 .notification {
-    background: @primary-dim-transparent;
+    background: @charcoal_grey_transparent;
     padding: 3px 10px 3px 6px;
     border-radius: 10px;
     border: 2px solid @noti-bg;
@@ -35,13 +43,13 @@
 }
 
 .notification-group {
-    background-color: @primary-dim-transparent;
+    background-color: @charcoal_grey_transparent;
     border-radius: 10px;
-    color: @secondary;
+    color: @fog_grey;
 }
 
 .close-button {
-    background: @primary;
+    background: @charcoal_grey;
     color: @noti-bg;
     text-shadow: none;
     padding: 0;
@@ -52,14 +60,14 @@
 
 .close-button:hover {
     box-shadow: none;
-    background: @on_primary;
+    background: @steel_grey;
     transition: all .15s ease-in-out;
     border: none
 }
 
 
 .notification-action {
-    border: 1px solid @primary-dim;
+    border: 1px solid @charcoal_grey;
     border-top: none;
     border-radius: 10px;
 }
@@ -67,8 +75,8 @@
 
 .notification-default-action:hover,
 .notification-action:hover {
-    color: @secondary;
-    background: @primary-dim-transparent;
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
 }
 
 
@@ -84,8 +92,8 @@
 
 .notification-action {
     border-bottom-left-radius: 10px;
-    background: @on_primary;
-    color: @primary-dim;
+    background: @steel_grey;
+    color: @mid_grey;
 }
 
 .inline-reply {
@@ -94,8 +102,8 @@
 
 .inline-reply-entry {
     background: @noti-bg;
-    color: @primary-dim;
-    caret-color: @primary-dim;
+    color: @mid_grey;
+    caret-color: @mid_grey;
     border: 1px solid @noti-bg;
     border-radius: 10px
 }
@@ -106,22 +114,22 @@
     background: @noti-bg;
     border: 1px solid @noti-bg;
     border-radius: 10px;
-    color: @primary-dim
+    color: @mid_grey
 }
 
 .inline-reply-button:disabled {
     background: initial;
-    color: @primary-dim;
+    color: @mid_grey;
     border: 1px solid transparent
 }
 
 .inline-reply-button:hover {
-    background: @primary-dim
+    background: @mid_grey
 }
 
 .body-image {
     margin-top: 6px;
-    color: @secondary;
+    color: @fog_grey;
     border-radius: 10px
 }
 
@@ -129,7 +137,7 @@
     font-size: 1rem;
     font-weight: bold;
     background: transparent;
-    color: @secondary;
+    color: @fog_grey;
     text-shadow: none
 }
 
@@ -137,7 +145,7 @@
     font-size: 1rem;
     font-weight: bold;
     background: transparent;
-    color: @secondary;
+    color: @fog_grey;
     text-shadow: none;
     margin-right: 18px
 }
@@ -146,14 +154,14 @@
     font-size: 1rem;
     font-weight: bold;
     background: transparent;
-    color: @primary-dim;
+    color: @mid_grey;
     text-shadow: none
 }
 
 .control-center {
     background: @noti-bg;
-    border: 1px solid @primary-dim-transparent;
-	color: @secondary;
+    border: 1px solid @charcoal_grey_transparent;
+	color: @fog_grey;
     border-radius: 10px;
 }
 
@@ -174,8 +182,8 @@
 }
 
 .widget-title {
-    color: @secondary;
-    background: @primary-dim-transparent;
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
     padding: 3px 6px;
     margin: 5px;
     font-size: 1rem;
@@ -184,45 +192,45 @@
 
 .widget-title>button {
     font-size: 0.75rem;
-    color: @primary-dim;
+    color: @fog_grey;
     border-radius: 10px;
-	background: @primary;
+	background: @steel_grey;
 	border: 0.5px solid @noti-bg;
 }
 
 /* clear button */
 .widget-title>button:hover {
-    background: @on_primary;
-    color: @primary;
+    background: @fog_grey;
+    color: @charcoal_grey;
 }
 
 .widget-dnd {
-    background: @primary-dim-transparent;
+    background: @charcoal_grey_transparent;
     padding: 3px 6px;
     margin: 5px;
     border-radius: 10px;
     font-size: 0.5rem;
-    color: @primary;
+    color: @charcoal_grey;
 }
 
 .widget-dnd>switch {
     border-radius: 10px;
-    border: 1px solid @secondary;
-    background: @primary-dim-transparent;
+    border: 1px solid @fog_grey;
+    background: @steel_grey;
 }
 
 .widget-dnd>switch:checked {
-    background: @primary;
-    border: 1px solid @secondary;
+    background: @mid_grey;
+    border: 1px solid @fog_grey;
 }
 
 .widget-dnd>switch slider {
-    background: @primary;
+    background: @charcoal_grey;
     border-radius: 10px
 }
 
 .widget-dnd>switch:checked slider {
-    background: @primary-dim;
+    background: @fog_grey;
     border-radius: 10px
 }
 
@@ -232,12 +240,12 @@
 
 .widget-label>label {
     font-size: 1rem;
-    color: @secondary;
+    color: @fog_grey;
 }
 
 .widget-mpris {
-    color: @secondary;
-    background: @primary-dim-transparent;
+    color: @fog_grey;
+    background: @charcoal_grey_transparent;
     padding: 3px 6px;
     margin: 5px;
     border-radius: 10px;
@@ -263,24 +271,24 @@
 
 .widget-buttons-grid {
     font-size: large;
-	  color: @secondary;
+	color: @fog_grey;
     padding: 5px 0px 5px 8px;
     margin: 5px;
     border-radius: 10px;
-    background: @primary-dim-transparent;
+    background: @charcoal_grey_transparent;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
     margin: 2px;
-    background: @primary;
+    background: @charcoal_grey;
     border-radius: 10px;
-    color: @primary-dim
+    color: @fog_grey
 }
 
 /* individual buttons */
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: @on_primary;
-    color: @primary
+    background: @steel_grey;
+    color: @charcoal_grey
 }
 
 .widget-menubar>box>.menu-button-bar>button {
@@ -299,11 +307,11 @@
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
     font-size: x-large;
-    color: @secondary
+    color: @fog_grey
 }
 
 .widget-volume>box>button {
-    background: @secondary;
+    background: @fog_grey;
     border: none
 }
 
@@ -312,7 +320,7 @@
     padding: 4px 8px 8px;
     margin: 0 8px 8px;
     border-radius: 10px;
-	color: @secondary
+	color: @fog_grey
 }
 
 .widget-backlight {
@@ -321,15 +329,15 @@
     margin: 10px 10px 5px 10px;
     border-radius: 10px;
     font-size: x-large;
-    color: @secondary
+    color: @fog_grey
 }
 
 .widget-volume scale highlight {
-    background: @primary-dim;
+    background: @mid_grey;
     border-radius: 10px;
 }
 
 .widget-backlight scale highlight {
-    background: @primary-dim;
+    background: @mid_grey;
     border-radius: 10px;
 }

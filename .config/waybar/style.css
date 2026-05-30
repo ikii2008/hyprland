@@ -77,11 +77,7 @@ window#waybar.empty #window {
 }
 
 .modules-left, .modules-center, .modules-right {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
-	border-radius: 40px;
+	padding: 0px;
 } 
 
 #backlight,
@@ -113,54 +109,61 @@ window#waybar.empty #window {
 	padding-bottom: 3px;
 	padding-right: 8px;
 	padding-left: 8px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 #mobo {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;
+  border-radius: 12px;
   margin: 0px 1px 0px 1px;
+  border-bottom: 2px solid @on_primary;
 }
 
 #menu {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;
+  border-radius: 12px;  
+  border-bottom: 2px solid @on_primary;
   margin: 0px 1px 0px 1px;
 }
 
 #systray {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;  
+  border-radius: 12px;
+  border-bottom: 2px solid @on_primary;
   margin: 0px 1px 0px 1px;
 }
 
 #group-menu {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;  
+  border-radius: 12px;
+  border-bottom: 2px solid @on_primary;
   margin: 0px 1px 0px 1px;
 }
 
 #swaync {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;  
+  border-radius: 12px;
+  border-bottom: 2px solid @on_primary;
   margin: 0px 1px 0px 1px;
 }
 
 #left {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;
+  border-radius: 12px;
+  border-bottom: 2px solid @on_primary;
 }
 
 #center {
   background-color: @primary-dim;
   color: @skin;
-  border-radius: 40px;
+  border-radius: 12px;
+  border-bottom: 2px solid @on_primary;
 }
 
 #custom-hypridle.notactive,

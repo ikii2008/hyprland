@@ -9,7 +9,8 @@ WLOGOUT_THEME="$HOME/.config/wlogout/themes"
 WLOGOUT_CONFIG="$HOME/.config/wlogout"
 HYPRLOCK_THEME="$HOME/.config/hypr/HyprlockThemes"
 HYPRLOCK_CONFIG="$HOME/.config/hypr"
-
+SWAY_THEME="$HOME/.config/swaync/themes"
+SWAY_CONFIG="$HOME/.config/swaync"
 chosen=$(ls "$THEME_DIR" | rofi -dmenu -p "Pilih tema:")
 
 
@@ -50,5 +51,15 @@ case "$chosen" in
         ;;
 esac
 
-pkill waybar
-waybar &
+rm $SWAY_CONFIG/style.css
+case "$chosen" in
+    dark.css)
+        cp $SWAY_THEME/dark.css $SWAY_CONFIG/style.css
+        ;;
+    matugen.css)
+        cp $SWAY_THEME/matugen.css $SWAY_CONFIG/style.css
+        ;;
+esac
+
+~/.config/hypr/scripts/RefreshWaybar.sh
+

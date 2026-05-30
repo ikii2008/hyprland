@@ -32,7 +32,7 @@ mainbox {
     padding:                    20px;
     border:                     2px;
     border-color:               @charcoal-grey;
-    background-image:           url("~/Pictures/hyprland/hyprlock/rofi-bg.jpg", height);
+    background-image:           url("~/.config/hypr/wallpaper/rofi-bg.jpg", height);
     background-position:        center;
 }
 
